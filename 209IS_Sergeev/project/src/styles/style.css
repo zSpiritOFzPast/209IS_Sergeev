@@ -279,9 +279,9 @@ justify-content: flex-end;
 .images{
   display:flex;
   justify-content: flex-end;
-  images1 {
-    display: flex;
   }
+.images1 {
+  
 }
 .gallery {
   display: flex;
