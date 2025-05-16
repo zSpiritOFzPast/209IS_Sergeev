@@ -277,7 +277,7 @@ a {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .about-title {
@@ -342,7 +342,7 @@ a {
 }
 .teatr img {
   width: 100%;
-  height: 100%;
+  height: 216%;
   object-fit: cover;
   border-radius: 8px 8px 8px 150px;
 }
@@ -366,8 +366,9 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: space-between;
+  justify-content: ;
   flex-direction: column;
+  align-content: center;
   height: 100vh;
 }
 
@@ -401,6 +402,9 @@ a {
 .gallery-img {
   max-width: 1100px; /* Общая ширина всех колонок */
   margin: 0 auto;
+  width: 1000;
+  
+  
 }
 
 .imgG {
@@ -446,6 +450,8 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Чтобы изображения заполняли контейнеры */
+  border-radius: 20px;
+
 }
 
 .contacts {
@@ -459,8 +465,17 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  min-height: 100px;
+  h1 {
+   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0px;
+    transform: scaleY(1.1);
+    font-size: 50px;
+    color: rgba(0, 255, 191, 0.61);
+    text-align: left;
+  }
 }
-
 .contact {
   font-family: Arial, sans-serif;
   max-width: 600px;
@@ -470,6 +485,10 @@ img {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
+
+  position: absolute;
+  top: 120px;
+  right: 20px;
 }
 
 .contact h2 {
@@ -504,7 +523,7 @@ img {
   margin-top: 30px;
 }
 
-.map {
+.vidget {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -515,4 +534,52 @@ img {
     object-fit: cover;
     border-radius: 10px;
   }
+}
+.end{
+background-color: #ffffff;
+}
+
+.headEnd{
+
+}
+
+
+.site-footer {
+  background-color: transparent; /* Прозрачный фон как в оригинале */
+  padding: 15px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #333333; /* Темно-серый цвет текста */
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.privacy-link {
+  font-size: 12px;
+  color: #333333;
+  margin: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.privacy-link:hover {
+  color: #000000; /* Чуть темнее при наведении */
 }
