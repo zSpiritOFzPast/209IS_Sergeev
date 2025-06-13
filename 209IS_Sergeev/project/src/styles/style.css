@@ -16,11 +16,11 @@ a {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
   background-color: #2e2e2e75;
+  z-index: 1000; 
 }
 
 .submit {
@@ -366,7 +366,6 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: ;
   flex-direction: column;
   align-content: center;
   height: 100vh;
@@ -454,7 +453,7 @@ img {
 
 }
 
-.contacts {
+. {
   background-image: url(../../assets/image/backCont.png);
   background-blend-mode: color;
   background-color: rgba(73, 73, 73, 0.493);
@@ -476,16 +475,16 @@ img {
     text-align: left;
   }
 }
+
 .contact {
   font-family: Arial, sans-serif;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
-  background-color: rgba(249, 249, 249, 0.438); /* Добавляем прозрачность */
+  background-color: rgba(249, 249, 249, 0.438);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
-
   position: absolute;
   top: 120px;
   right: 20px;
@@ -510,6 +509,37 @@ img {
   font-weight: bold;
   color: rgb(0, 145, 31);
 }
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+  background: #f5f5f5;
+}
+@media (max-width: 768px) {
+  .map-container {
+    height: 350px;
+  }
+  
+  .map-wrapper {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .map-container {
+    height: 300px;
+  }
+}
+
 
 .contact .address,
 .contact .phone {
