@@ -4,6 +4,9 @@
 
 section {
   padding: 30px 60px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden; 
 }
 
 a {
@@ -16,11 +19,11 @@ a {
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
   background-color: #2e2e2e75;
-  z-index: 1000; 
 }
 
 .submit {
@@ -280,15 +283,10 @@ a {
   background-size: cover;
 }
 
-.about-title {
-  h1 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    letter-spacing: 0px;
-    transform: scaleY(1.1);
-    font-size: 50px;
-    color: rgba(0, 255, 191, 0.61);
-    text-align: left;
-  }
+.about-title h1 {
+  color: rgba(0, 255, 191, 0.527);
+  font-size: 50px;
+  margin-bottom: 40px;
 }
 
 .content {
@@ -298,24 +296,57 @@ a {
 }
 
 .about-text {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  width: max-content;
-  height: max-content;
-
-  padding: auto;
+  display: flex;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+  margin-top: 20px;
 }
 
-.logo-txt {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 10px;
-  width: 20px;
-  height: 20px;
-  margin: 20px auto;
+.text-column {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.7;
+}
 
-  justify-content: flex-end;
+.text-column {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.text-column ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.text-column li {
+  margin-bottom: 10px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #2a5d34;
+  font-size: 18px;
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+}
+
+
+.logo-column {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
 }
 
 .images {
@@ -453,41 +484,122 @@ img {
 
 }
 
-. {
-  background-image: url(../../assets/image/backCont.png);
-  background-blend-mode: color;
-  background-color: rgba(73, 73, 73, 0.493);
-  gap: 40px;
+.contacts {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  background-repeat: no-repeat;
+  background-image: url(../../assets/image/backCont.png);
+  background-blend-mode: color;
+  background-color: rgba(255, 255, 255, 0.747);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  min-height: 100px;
-  h1 {
-   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    letter-spacing: 0px;
-    transform: scaleY(1.1);
-    font-size: 50px;
-    color: rgba(0, 255, 191, 0.61);
-    text-align: left;
+  height: 100vh;
+  padding: 30px 60px;
+  
+}
+
+/* Изменил структуру расположения контактов */
+.contacts-content {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* Добавил для фиксированного размера карты */
+.map-vidget {
+  flex-shrink: 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px; /* Скругление углов виджета */
+  overflow: hidden;
+}
+
+/* Новые стили для контактной информации */
+.contact-info {
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+  background: rgba(141, 141, 141, 0.377);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  width: 350px;
+  margin-left: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  right: 60px;
+  top: 140px;
+}
+
+/* Заголовок */
+.contact-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Блоки с информацией */
+.address-block, 
+.phone-block {
+  margin-bottom: 15px;
+}
+
+/* Метки */
+.label {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Значения */
+.value {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Футер */
+.contact-footer {
+  color: #2a5d34;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Адаптивность */
+@media (max-width: 1000px) {
+  .contacts-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-info {
+    margin-left: 0;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
+.contacts h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0px;
+  transform: scaleY(1.1);
+  font-size: 50px;
+  color: rgba(0, 255, 191, 0.61);
+  margin-bottom: 30px;
+}
+
+
 .contact {
-  font-family: Arial, sans-serif;
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgba(249, 249, 249, 0.438);
+  background: rgba(249, 249, 249, 0.9);
+  padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin-top: 30px;
   backdrop-filter: blur(10px);
-  position: absolute;
-  top: 120px;
-  right: 20px;
 }
 
 .contact h2 {
@@ -511,34 +623,29 @@ img {
 }
 
 .map-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 20px 0;
+  flex: 1;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.map-container {
-  width: 100%;
-  height: 400px;
-  background: #f5f5f5;
-}
-@media (max-width: 768px) {
-  .map-container {
-    height: 350px;
+
+
+@media (max-width: 900px) {
+  .contacts-wrapper {
+    flex-direction: column;
   }
   
-  .map-wrapper {
-    max-width: 100%;
+  .vidget,
+  .contact {
+    width: 100%;
+  }
+  
+  .vidget {
+    height: 400px;
   }
 }
-@media (max-width: 480px) {
-  .map-container {
-    height: 300px;
-  }
-}
+
 
 
 .contact .address,
@@ -554,62 +661,107 @@ img {
 }
 
 .vidget {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: 0;
-  img {
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-}
-.end{
-background-color: #ffffff;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.headEnd{
-
+/* Компактная секция end */
+.end {
+    background-color: #f8f8f8;
+    padding: 30px 40px;
+    position: relative;
+    min-height: auto;
 }
 
+/* Основной контейнер */
+.end-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+    height: 50px; /* Фиксированная высота для выравнивания */
+}
 
+/* Логотип слева */
+.end-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.end-logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Навигация по центру */
+.headEnd {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.nav-divider {
+    color: #ccc;
+    display: flex;
+    align-items: center;
+}
+
+/* Социальные иконки справа по центру */
+.social-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    height: 100%;
+}
+
+.social-icon {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+}
+
+/* Футер внизу слева */
 .site-footer {
-  background-color: transparent; /* Прозрачный фон как в оригинале */
-  padding: 15px 0;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  position: relative;
-  width: 100%;
-}
-
-.footer-content {
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+    margin-top: 10px;
 }
 
 .copyright {
-  font-size: 12px;
-  color: #333333; /* Темно-серый цвет текста */
-  margin: 0;
-  font-weight: normal;
-  line-height: 1.4;
+    color: #2a5d34;
+    font-size: 12px;
+    margin: 0;
 }
 
 .privacy-link {
-  font-size: 12px;
-  color: #333333;
-  margin: 0;
-  text-decoration: underline;
-  cursor: pointer;
-  font-weight: normal;
-  line-height: 1.4;
-}
-
-.privacy-link:hover {
-  color: #000000; /* Чуть темнее при наведении */
+    color: #666;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 3px;
 }

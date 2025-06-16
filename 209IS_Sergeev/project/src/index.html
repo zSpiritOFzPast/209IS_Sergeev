@@ -32,7 +32,7 @@
 
     <div class="submit">
       <img class="people" src="../assets/svg/RegIcon.svg" />
-      <a href="">Оставьть заявку</a>
+      <a href="">Оставить заявку</a>
     </div>
     >
   </header>
@@ -96,31 +96,30 @@
 
     <div class="content">
       <div class="about-text">
-        <p>
-          Компания КатеПош основана в 2016 году.<br />
-          Мы начинали свою деятельность с небольших туристических походов,<br />
-          экспедициями и просто активным отдыхом.
-        </p>
+        <div class="text-column">
+          <p>
+            Компания KarelTour основана в 2016 году.<br />
+            Мы начинали свою деятельность с небольших туристических походов,<br />
+            экспедициями и просто активным отдыхом.
+          </p>
 
-        <p>За 6 лет существования компании мы:</p>
-        <br />
-        <br />
-        <ul>
-          <li><strong>Приняли более 457 000 гостей;</strong></li>
-          <li><strong>Расширили базу нашего снаряжения;</strong></li>
-          <li><strong>Обзавелись собственным лагерем;</strong></li>
-        </ul>
-        <br />
-        <br />
-        <p>
-          С нами вы увидите прекрасные водопады, скалы, леса<br />
-          и древние петроглифы и всю красоту Карельского края.
-        </p>
-        <br /><br /><br />
-        <p><span>Ощути Карелию вместе с нами!</span></p>
-
-        <div class="logo-txt">
-          <img src="../assets/image/24c7e91ec29856b23c89f725e59360f1.png" alt="logTree" />
+          <p>За 6 лет существования компании мы:</p>
+          <br />
+          <ul>
+            <li><strong>Приняли более 457 000 гостей;</strong></li>
+            <li><strong>Расширили базу нашего снаряжения;</strong></li>
+            <li><strong>Обзавелись собственным лагерем;</strong></li>
+          </ul>
+          <br />
+          <p>
+            С нами вы увидите прекрасные водопады, скалы, леса<br />
+            и древние петроглифы и всю красоту Карельского края.
+          </p>
+          <br />
+          <p class="highlight">Ощути Карелию вместе с нами!</p>
+        </div>
+        <div class="logo-column">
+          <img src="../assets/image/24c7e91ec29856b23c89f725e59360f1.png" alt="logTree" class="company-logo" />
         </div>
       </div>
 
@@ -165,53 +164,60 @@
 
   <section class="contacts">
     <h1>Контакты</h1>
-    <div class="map-wrapper">
-      <div class="map-container" id="yandex-map" style="position: relative; overflow: hidden; border-radius: 20px">
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?ll=34.366444%2C61.794739&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozNDA3NTA2MjI1EmjQoNC-0YHRgdC40Y8sINCg0LXRgdC_0YPQsdC70LjQutCwINCa0LDRgNC10LvQuNGPLCDQn9C10YLRgNC-0LfQsNCy0L7QtNGB0LosINGD0LvQuNGG0LAg0JrQuNGA0L7QstCwLCAzMCIKDT13CUIV0S13Qg%2C%2C&z=16.18"
-          width="400" height="400" frameborder="1" allowfullscreen="true" style="position: relative"></iframe>
+    <div class="contacts-content">
+      <div class="map-vidget">
+        <div class="map-container">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=34.366444%2C61.794739&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozNDA3NTA2MjI1EmjQoNC-0YHRgdC40Y8sINCg0LXRgdC_0YPQsdC70LjQutCwINCa0LDRgNC10LvQuNGPLCDQn9C10YLRgNC-0LfQsNCy0L7QtNGB0LosINGD0LvQuNGG0LAg0JrQuNGA0L7QstCwLCAzMCIKDT13CUIV0S13Qg%2C%2C&z=16.18"
+            width="400" height="400" frameborder="1" allowfullscreen="true"></iframe>
+        </div>
       </div>
-    </div>
-    <div class="contact">
-      <p>ОСТАЛИСЬ ВОПРОСЫ?</p>
-
-      <div class="address">
-        <p>
-          <span>АДРЕС:</span><br />
-          <span class="highlight">Ул. Кирова, д.30, офис 27</span>
-        </p>
+      <div class="contact-info">
+        <p class="contact-title">ОСТАЛИСЬ ВОПРОСЫ?</p>
+        <div class="address-block">
+          <p class="label">АДРЕС:</p>
+          <p class="value">Ул. Кирова, д.30, офис 27</p>
+        </div>
+        <div class="phone-block">
+          <p class="label">КОНТАКТНЫЙ ТЕЛЕФОН:</p>
+          <p class="value">+7 (954) 654-78-91</p>
+          <p class="value">Круглосуточно, без выходных</p>
+        </div>
+        <p class="contact-footer">ВСЕГДА БУДЕМ РАДЫ <br> ОТВЕТИТЬ!</p>
       </div>
-
-      <div class="phone">
-        <p>
-          <span>КОНТАКТНЫЙ ТЕЛЕФОН:</span><br />
-          <span class="highlight">+7 (954) 654-78-91</span><br />
-          Круглосуточно, без выходных
-        </p>
-      </div>
-
-      <p class="footer">ВСЕГДА БУДЕМ РАДЫ ОТВЕТИТЬ!</p>
     </div>
   </section>
   <section class="end">
-    <div class="headEnd">
-      <ul>
-        <li><a href="#main">Главная</a></li>
-        <li><a href="#catalog">Каталог</a></li>
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#gallery">Галерея</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-      </ul>
+    <div class="end-content">
+        <div class="end-logo">
+            <img src="../assets/svg/LogoTree.svg" alt="Логотип">
+        </div>
+        
+        <div class="headEnd">
+            <ul class="nav-menu">
+                <li><a href="#main">Главная</a></li>
+                <li class="nav-divider">|</li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li class="nav-divider">|</li>
+                <li><a href="#about">О нас</a></li>
+                <li class="nav-divider">|</li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li class="nav-divider">|</li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+        
+        <div class="social-container">
+            <a href="#" class="social-icon"><img src="../assets/svg/VKgg.svg" alt="VK"></a>
+            <a href="#" class="social-icon"><img src="../assets/svg/Telegram.svg" alt="Telegram"></a>
+        </div>
     </div>
+    
     <footer class="site-footer">
-      <div class="footer-content">
         <p class="copyright">Copyright © 2021 Все права защищены</p>
-        <p class="privacy-link">
-          Политика конфиденциальности и обработки персональных данных
-        </p>
-      </div>
+        <p class="privacy-link">Политика конфиденциальности</p>
     </footer>
-  </section>
+</section>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
