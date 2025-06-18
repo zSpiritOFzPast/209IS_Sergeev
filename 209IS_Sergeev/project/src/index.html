@@ -4,220 +4,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
 
+  <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
-  <title>Document</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="../assets/svg/LogoTree.svg" alt="Логотип" />
-    </div>
-
-    <div>
-      <nav>
-        <ul class="links">
-          <li><a href="#main">Главная</a></li>
-          <li><a href="#catalog">Каталог</a></li>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#gallery">Галерея</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="submit">
-      <img class="people" src="../assets/svg/RegIcon.svg" />
-      <a href="">Оставить заявку</a>
-    </div>
-    >
-  </header>
   <section class="main">
+    <header class="header">
+      <div class="logo">
+        <img src="../assets/svg/logo.svg" alt="Логотип" />
+      </div>
+
+      <div>
+        <ul class="links">
+          <li>
+            <a href="">Главная</a>
+          </li>
+          <li>
+            <a href="">Каталог</a>
+          </li>
+          <li>
+            <a href="">О нас</a>
+          </li>
+          <li>
+            <a href="">Галерея</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="application">
+        <img src="../assets/svg/user.svg" />
+        <a href="">Оставить заявку</a>
+      </div>
+    </header>
+
     <div class="main-text">
-      <h1>
-        Добро пожаловать <br />
-        в Карелию!
-      </h1>
-      <p></p>
-      <button><a href="">Связаться</a></button>
+      <h1>Добро пожаловать в Карелию</h1>
+      <p>
+        Приглашаем в лучшее приключение в вашей
+        жизни мы создадим ваш отпуск!
+      </p>
     </div>
 
     <div class="social-container">
       <input type="checkbox" id="socialToggle" class="social-toggle" />
-      <label for="socialToggle" class="main-icons"></label>
-      <div>
-        <img class="social-icons" src="../assets/svg/VKgg.svg" alt="VK" />
-        <img class="social-icons" src="../assets/svg/Telegram.svg" alt="TG" />
+
+      <label for="socialToggle" class="main-icon"></label>
+
+      <div class="social-icons">
+        <img class="social-icon" src="../assets/svg/vk.svg" alt="VK" />
+        <img class="social-icon" src="../assets/svg/telegram.svg" alt="Telegram" />
       </div>
     </div>
   </section>
   <section class="catalog">
-    <div class="catalog-text">
+    <div class="title">
       <h1>КАТАЛОГ</h1>
       <p>
-        Любой текст из макета.<br />
-        Я могу написать все, что в голову взбредёт,<br />
-        ыгыгыгыгыгыгыгыггыгыыггыгыыгыггыгыгы.
+        Задача организации, в особенности же
+        сложившаяся структура организации
+        позволяет выполнять важные задания по
+        разработке существенных финансовых и
+        административных условий
       </p>
     </div>
 
     <div class="your-class">
       <figure>
-        <img src="../assets/image/vodopad-kivach-2.jpg" alt="" />
-        <figcaption>Водопад Кивач</figcaption>
+        <img src="../assets/images/cart 1.png" alt="" />
       </figure>
       <figure>
-        <img src="../assets/image/Марц.jpg" alt="Marc" />
-        <figcaption>Марциальные воды</figcaption>
+        <img src="../assets/images/cart 2.png" alt="" />
       </figure>
       <figure>
-        <img src="../assets/image/1копия-3.jpg" alt="Petr" />
-        <figcaption>Петрозаводск</figcaption>
+        <img src="../assets/images/cart 3.png" />
       </figure>
       <figure>
-        <img src="../assets/image/faq-valaam__main___shutterstock_1739962280.b2ljra7qpuzs.jpg" alt="valaam" />
-        <figcaption>О. Валаам</figcaption>
-      </figure>
-      <figure>
-        <img src="../assets/image/main_890x400.jpg" alt="" />
-        <figcaption>Музыкальный театр</figcaption>
+        <img src="../assets/images/cart 4.png" alt="" />
       </figure>
     </div>
   </section>
 
   <section class="about">
-    <div class="about-title">
+    <div class="title">
       <h1>О нас</h1>
     </div>
+    <div style="display: flex;">
+      <img style="height: 446px;" src="../assets/images/about-text.png" alt="текст" />
+      <img src="../assets/images/about-block.png" alt="блок" />
+    </div>
 
-    <div class="content">
-      <div class="about-text">
-        <div class="text-column">
-          <p>
-            Компания KarelTour основана в 2016 году.<br />
-            Мы начинали свою деятельность с небольших туристических походов,<br />
-            экспедициями и просто активным отдыхом.
-          </p>
+  </section>
 
-          <p>За 6 лет существования компании мы:</p>
-          <br />
-          <ul>
-            <li><strong>Приняли более 457 000 гостей;</strong></li>
-            <li><strong>Расширили базу нашего снаряжения;</strong></li>
-            <li><strong>Обзавелись собственным лагерем;</strong></li>
-          </ul>
-          <br />
-          <p>
-            С нами вы увидите прекрасные водопады, скалы, леса<br />
-            и древние петроглифы и всю красоту Карельского края.
-          </p>
-          <br />
-          <p class="highlight">Ощути Карелию вместе с нами!</p>
-        </div>
-        <div class="logo-column">
-          <img src="../assets/image/24c7e91ec29856b23c89f725e59360f1.png" alt="logTree" class="company-logo" />
-        </div>
+  <div class="background_last">
+    <section class="gallery">
+      <div class="title">
+        <h1>Галерея</h1>
       </div>
+      <div class="wrapper">
+        <figure>
+          <img src="../assets/images/gallery-card.png" alt="галерея">
+        </figure>
 
-      <div class="images">
-        <div class="first-image">
-          <img src="../assets/image/gornyi-park.webp" alt="петроглифы" />
-          <div class="teatr">
-            <img src="../assets/image/main_890x400.jpg" alt="театр" />
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="title">
+        <h1>Контакты</h1>
+      </div>
+      <div class="hehe">
+        <figure>
+          <img src="../assets/images/map.jpg" alt="">
+        </figure>
+
+        <div class="call">
+          <h3 class="call-text">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+          <div style="text-align: left; margin-left: 44px; font-family: 'gothampro'; font-weight: 400;">
+            <p class="call-text">АДРЕС:</p>
+            <p class="call-green">Ул. Кирова, д.30, офис 27</p>
+            <p class="call-text">Контактный телефон:</p>
+            <p class="call-green">+7 (954) 654-78-91</p>
+            <p class="call-green">Круглосуточно, без выходных</p>
           </div>
-        </div>
-        <div class="last-image">
-          <img src="../assets/image/vodopad-kivach-2.jpg" alt="ВодопадКивач" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="gallery">
-    <div>
-      <ul class="gallery-links">
-        <li><a href="../src/pages/RusG.html">Рускеала</a></li>
-        <li><a href="../src/pages/KijG.html">Кижи</a></li>
-        <li><a href="../src/pages/KivG.html">Кивач</a></li>
-        <li><a href="../src/pages/all.html">Все</a></li>
-      </ul>
-    </div>
-    <div class="gallery-img">
-      <div class="gallery-text">
-        <h1>ГАЛЕРЕЯ</h1>
-      </div>
-      <div class="imgG">
-        <img class="img1" src="../assets/image/faq-valaam__main___shutterstock_1739962280.b2ljra7qpuzs.jpg" alt="" />
-        <img class="img2" src="../assets/image/faq-valaam__main___shutterstock_1739962280.b2ljra7qpuzs.jpg" alt="" />
 
-        <img class="img3" src="../assets/image/faq-valaam__main___shutterstock_1739962280.b2ljra7qpuzs.jpg" alt="" />
-
-        <img class="img4" src="../assets/image/vodopad-kivach-2.jpg" alt="" />
-        <img class="img5" src="../assets/image/faq-valaam__main___shutterstock_1739962280.b2ljra7qpuzs.jpg " alt="" />
-      </div>
-    </div>
-  </section>
-
-  <section class="contacts">
-    <h1>Контакты</h1>
-    <div class="contacts-content">
-      <div class="map-vidget">
-        <div class="map-container">
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?ll=34.366444%2C61.794739&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozNDA3NTA2MjI1EmjQoNC-0YHRgdC40Y8sINCg0LXRgdC_0YPQsdC70LjQutCwINCa0LDRgNC10LvQuNGPLCDQn9C10YLRgNC-0LfQsNCy0L7QtNGB0LosINGD0LvQuNGG0LAg0JrQuNGA0L7QstCwLCAzMCIKDT13CUIV0S13Qg%2C%2C&z=16.18"
-            width="400" height="400" frameborder="1" allowfullscreen="true"></iframe>
+          <p class="call-green"
+            style="width: 240px; margin: auto auto; font-size: 36px; margin-top: 26px; font-family: 'aabebasneue';">
+            Всегда будем рады<br>ответить!</p>
         </div>
       </div>
-      <div class="contact-info">
-        <p class="contact-title">ОСТАЛИСЬ ВОПРОСЫ?</p>
-        <div class="address-block">
-          <p class="label">АДРЕС:</p>
-          <p class="value">Ул. Кирова, д.30, офис 27</p>
-        </div>
-        <div class="phone-block">
-          <p class="label">КОНТАКТНЫЙ ТЕЛЕФОН:</p>
-          <p class="value">+7 (954) 654-78-91</p>
-          <p class="value">Круглосуточно, без выходных</p>
-        </div>
-        <p class="contact-footer">ВСЕГДА БУДЕМ РАДЫ <br> ОТВЕТИТЬ!</p>
-      </div>
-    </div>
-  </section>
-  <section class="end">
-    <div class="headEnd">
-      <ul class="nav-menu">
-        <li><a href="#main">Главная</a></li>
-        <li class="nav-divider">|</li>
-        <li><a href="#catalog">Каталог</a></li>
-        <li class="nav-divider">|</li>
-        <li><a href="#about">О нас</a></li>
-        <li class="nav-divider">|</li>
-        <li><a href="#gallery">Галерея</a></li>
-        <li class="nav-divider">|</li>
-        <li><a href="#contacts">Контакты</a></li>
-      </ul>
-    </div>
-    <div class="end-content">
-      <div class="end-logo">
-        <img src="../assets/svg/LogoTree.svg" alt="Логотип">
-      </div>
-    </div>
-    <div class="social-container">
-      <a href="#" class="social-icon"><img src="../assets/svg/VKgg.svg" alt="VK"></a>
-      <a href="#" class="social-icon"><img src="../assets/svg/Telegram.svg" alt="Telegram"></a>
-    </div>
-    <footer class="site-footer">
-      <p class="copyright">Copyright © 2021 Все права защищены</p>
-      <p class="privacy-link">Политика конфиденциальности</p>
-    </footer>
-  </section>
+    </section>
+  </div>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script> 
   <script type="text/javascript" src="../slick/slick.min.js"></script>
+
   <script type="text/javascript">
     $(document).ready(function () {
       $(".your-class").slick({
@@ -225,7 +159,7 @@
         slidesToScroll: 1,
         dots: true,
         arrows: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
       });
     });
