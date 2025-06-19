@@ -428,6 +428,8 @@ a {
 .gallery-links {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  margin: 40px;
   gap: 30px;
   list-style: none;
   margin-left: auto;
