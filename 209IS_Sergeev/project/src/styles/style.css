@@ -639,7 +639,7 @@ img {
   background-color: #f8f8f8;
   padding: 30px 40px;
   position: relative;
-  min-height: auto;
+  min-height: 50px;
 }
 
 .end-content {
@@ -648,7 +648,7 @@ img {
   justify-content: space-between;
   margin-bottom: 20px;
   position: relative;
-  height: 50px;
+  height: 25px;
 }
 
 .end-logo {
@@ -693,6 +693,7 @@ img {
   gap: 15px;
   align-items: center;
   height: 100%;
+  justify-content: flex-end;
 }
 
 .social-icon {
